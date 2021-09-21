@@ -8,7 +8,7 @@ initContainers:
   gitSync:
     enabled: true
     repo: "git@github.com:egovernments/configs"
-    branch: "statea"
+    branch: "stateb"
 
 # Container Configs
 image:
