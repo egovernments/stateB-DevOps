@@ -36,35 +36,35 @@ cluster-configs:
 
   secrets:
     db: 
-      namespace: [ statea ]
+      namespace: [ stateb ]
       name: db
 
     egov-notification-sms:
-      namespace: statea
+      namespace: stateb
       name: egov-notification-sms
 
     egov-filestore: 
-      namespace: statea
+      namespace: stateb
       name: egov-filestore     
       
     egov-location: 
-      namespace: statea
+      namespace: stateb
       name: egov-location
 
     egov-pg-service: 
-      namespace: statea
+      namespace: stateb
       name: egov-pg-service                 
 
     pgadmin: 
-      namespace: statea
+      namespace: stateb
       name: pgadmin       
 
     egov-enc-service: 
-      namespace: statea
+      namespace: stateb
       name: egov-enc-service       
 
     egov-notification-mail: 
-      namespace: statea
+      namespace: stateb
       name: egov-notification-mail
 
     home-isolation-notification-mail: 
@@ -72,59 +72,59 @@ cluster-configs:
       name: home-isolation-notification-mail      
 
     git-sync: 
-      namespace: [ statea ]
+      namespace: [ stateb ]
       name: git-creds
 
     kibana: 
-      namespace: statea
+      namespace: stateb
       name: kibana-creds                       
 
     kibana-infra: 
-      namespace: statea
+      namespace: stateb
       name: kibana-infra-creds     
 
     pgadmin: 
-      namespace: statea
+      namespace: stateb
       name: pgadmin
 
     egov-si-microservice:
-      namespace: statea
+      namespace: stateb
       name: egov-si-microservice
 
     egov-edcr-notification:
-      namespace: statea
+      namespace: stateb
       name: egov-edcr-notification 
 
     egov-edcr-bank-gateway:
-      namespace: statea
+      namespace: stateb
       name: egov-edcr-bank-gateway
 
     chatbot:
-      namespace: statea
+      namespace: stateb
       name: chatbot
     
     covid-chatbot:
-      namespace: statea
+      namespace: stateb
       name: covid-chatbot
 
     egov-user-chatbot:
-      namespace: statea
+      namespace: stateb
       name: egov-user-chatbot
 
     oauth2-proxy:
-      namespace: statea
+      namespace: stateb
       name: oauth2-proxy   
 
     case-management:
-      namespace: statea
+      namespace: stateb
       name: case-management   
   
     minio:
-      namespace: statea
+      namespace: stateb
       name: minio
 
     alertmanager:
-      namespace: statea
+      namespace: stateb
       name: alertmanager-main      
 
     jenkins:
@@ -136,7 +136,7 @@ cluster-configs:
       name: mysql
     
     wordpress:
-      namespace: statea
+      namespace: stateb
       name: wordpress
 
     postgres:
