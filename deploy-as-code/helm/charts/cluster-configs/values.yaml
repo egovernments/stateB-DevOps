@@ -7,7 +7,7 @@ cluster-configs:
 
   root-ingress:
     name: root-ingress
-    namespace: statea
+    namespace: stateb
     cert-issuer: "letsencrypt-staging"
     appRoot: citizen
     serviceName: citizen
@@ -16,7 +16,7 @@ cluster-configs:
   nginx-errors:
     enabled: false
     name: nginx-errors
-    namespace: statea
+    namespace: stateb
     serviceName: nginx-errors
     servicePort: 80
 
@@ -32,7 +32,7 @@ cluster-configs:
 
     egov-service-host:    
       name: egov-service-host
-      namespace: [ statea ] 
+      namespace: [ stateb ] 
 
   secrets:
     db: 
@@ -132,7 +132,7 @@ cluster-configs:
       name: jenkins 
     
     mysql:
-      namespace: statea
+      namespace: stateb
       name: mysql
     
     wordpress:
