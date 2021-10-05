@@ -23,7 +23,7 @@ spec:
   {{- if .Values.persistence.enabled }}
   volumeClaimTemplates:
   - metadata:
-      name: es-storage-ifix
+      name: es-storage-stateb
     {{- with .Values.persistence.annotations  }}
       annotations:
 {{ toYaml . | indent 8 }}
@@ -310,7 +310,7 @@ spec:
 {{- end }}
         volumeMounts:
           {{- if .Values.persistence.enabled }}
-          - name: "es-storage-ifix"
+          - name: "es-storage-stateb"
             mountPath: /usr/share/elasticsearch/data
           {{- end }}
 {{ if .Values.keystore }}
