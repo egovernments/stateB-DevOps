@@ -7,8 +7,9 @@ ingress:
   enabled: true
   context: "kibana"
   additionalAnnotations: |
-    nginx.ingress.kubernetes.io/auth-signin:  https://$host/oauth2/start?rd=$escaped_request_uri
-    nginx.ingress.kubernetes.io/auth-url:     https://$host/oauth2/auth 
+    nginx.ingress.kubernetes.io/auth-realm:   Authentication Required - Kibana
+    nginx.ingress.kubernetes.io/auth-secret:  kibana-creds
+    nginx.ingress.kubernetes.io/auth-type: basic
 
 # Init Containers Configs
 initContainers: {}
@@ -19,7 +20,7 @@ image:
   tag: 6.6.2
 replicas: "1"
 httpPort: 5601
-elasticsearchHosts: "http://elasticsearch-data-v1.ifix:9200"
+elasticsearchHosts: "http://elasticsearch-data-v1.stateb:9200"
 serverBasePath: "/kibana"
 healthCheckPath: "kibana/app/kibana"
 healthChecks:
