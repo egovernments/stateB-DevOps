@@ -25,7 +25,7 @@ tracing-enabled: true
 heap: "-Xmx704m -Xms512m -XX:TieredStopAtLevel=1"
 java-args: ""
 es-index-name: "dss-collection_v2"
-topic-incoming-collection: "dss-collection-update"
+topic-incoming-collection: "stateb-dss-collection-update"
 
 # Additional Container Envs
 env: |
@@ -91,11 +91,11 @@ env: |
     value: {{ index .Values "java-args" | quote }}
   - name: ES_PUSH_DIRECT
     value: {{ index .Values "es-push-direct" | quote }}
-  - name: KAFKA_TOPIC_INGEST_DATA
+  - name: KAFKA_TRANSACTION_INGEST_TOPIC
     value: "stateb-ingestData"
-  - name: KAFKA_TOPIC_VALID_DATA
+  - name: KAFKA_TRANSACTION_VALIDATION_TOPIC
     value: "stateb-validData"
-  - name: KAFKA_TOPIC_TRANSFORM_DATA
+  - name: KAFKA_TRANSACTION_TRANSFORMATION_TOPIC
     value: "stateb-transformedData"
   - name: KAFKA_TOPIC_ERROR_DATA
     value: "stateb-dataError"
