@@ -155,7 +155,7 @@ cluster-configs:
         vehicle: "http://vehicle.digit:8080"
         vendor: "http://vendor.digit:8080"
         inbox: "http://inbox.digit:8080/"
-        stateb-egov-mdms-service: "http://egov-mdms-service-tenant-b.digit:8080/"
+        stateb-egov-mdms-service: "http://egov-mdms-service.stateb:8080/"
 
 billing-service:
   memory_limits: 512Mi
@@ -315,13 +315,13 @@ egov-mdms-service:
   replicas: 1
   images:
     - egovio/egov-mdms-service
-  mdms-path: "/work-dir/egov-mdms-data/data"
+  mdms-path: "/work-dir/MDMS-TenantB"
   initContainers:
     gitSync:
-      repo: "git@github.com:egovernments/egov-mdms-data"
-      branch: "central-instance"
-  mdms-folder: "egov-mdms-data"
-  masters-config-url: "file:///work-dir/egov-mdms-data/master-config.json"
+      repo: "git@github.com:egovernments/MDMS-TenantB"
+      branch: "master"
+  mdms-folder: "MDMS-TenantB"
+  masters-config-url: 
   java-args: -Dspring.profiles.active=monitoring
 
 egov-indexer:
