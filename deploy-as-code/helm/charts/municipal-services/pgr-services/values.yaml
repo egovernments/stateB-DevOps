@@ -93,9 +93,9 @@ env: |
         name: egov-service-host
         key: egov-user
   - name: PGR_CREATE_TOPIC_NAME
-    value: statea-save-pgr-request
+    value: stateb-save-pgr-request
   - name: PGR_BATCH_CREATE_TOPIC_NAME
-    value: statea-save-pgr-request-batch
+    value: stateb-save-pgr-request-batch
   - name: NOTIFICATION_SMS_ENABLED
     value: {{ index .Values "notification-sms-enabled" | quote }}
   - name: NOTIFICATION_EMAIL_ENABLED
