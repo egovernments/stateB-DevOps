@@ -934,11 +934,16 @@ edcrTenants: |
   common.domain.name=stateb.digit.org
   tenant.stateb.digit.org=stateb
   client.id=stateb
+  
+microservice: |
   ms.url=http://egov-filestore.stateb:8080/
   filestoreservice.beanname=egovMicroServiceStore
   mdms.enable=true
   mdms.host=https://stateb.digit.org
+  mdms.host=http://egov-mdms-service.stateb:8080/
+  mdms.searchurl=egov-mdms-service/v1/_search
   is.environment.central.instance=true
+
 
 egov-edcr:
   ingress:
