@@ -57,6 +57,9 @@ cluster-configs:
         es-infra-host: elasticsearch-data-v1.backbone
         care-db-name: "care_db"
         care-db-port: "5432"
+        egov-bnd-freedownload-tenants: "pg.testing"
+        egov-bnd-live-citizen-tenants: "pg.testing"
+        egov-internal-microservice-user-uuid: "e1f57dfe-35a0-494a-911d-22cd3f786612"
 
     egov-service-host:
       namespace: [ stateb ]
@@ -154,12 +157,17 @@ cluster-configs:
         fsm: "http://fsm.digit:8080/"
         vehicle: "http://vehicle.digit:8080"
         vendor: "http://vendor.digit:8080"
-        inbox: "http://inbox.digit:8080/"
         stateb-egov-mdms-service: "http://egov-mdms-service.stateb:8080/"
         stateb-egov-filestore: "http://egov-filestore.stateb:8080"
+        egov-edcr: "http://egov-edcr.stateb:8080/"
         echallan-calculator: http://echallan-calculator.digit:8080/
         echallan-services: http://echallan-services.digit:8080/
-        egov-edcr: "http://egov-edcr.stateb:8080/"
+        inbox: "http://inbox.digit:8080/"
+        turn-io-adapter: "http://turn-io-adapter.digit:8080/"
+        pgr-services: "http://pgr-services.digit:8080/"
+        birth-death-services: "http://birth-death-services.digit:8080/"
+        egov-pdf: "http://egov-pdf.digit:8080/"
+
 
 billing-service:
   memory_limits: 512Mi
