@@ -65,18 +65,10 @@ cluster-configs:
       namespace: [ stateb ]
       data:
         internal-gateway: "http://internal-gateway.digit:8080/"
-        asset-services: "http://asset-services.digit:8080/"
-        asset-services-maha: "http://asset-services-maha.digit:8080/"
         billing-service: "http://billing-service.digit:8080/"
         collection-services: "http://collection-services.digit:8080/"
-        collection-masters: "http://collection-masters.digit:8080/"
-        collection-search-indexer: "http://collection-search-indexer.digit:8080/"
-        citizen-indexer: "http://citizen-indexer.digit:8080/"
-        citizen-services: "http://citizen-services.digit:8080/"
         dashboard-analytics: http://dashboard-analytics.digit:8080/
         dashboard-ingest: http://dashboard-ingest.digit:8080/
-        demand-services: "http://demand-services.digit:8080/"
-        data-sync-employee: "http://data-sync-employee.digit:8080/"
         egov-common-masters: "http://egov-common-masters.digit:8080/"
         egf-masters: "http://egf-masters.digit:8080/"
         egf-master: "http://egf-master.digit:8080/"
@@ -89,9 +81,9 @@ cluster-configs:
         egov-user: "http://egov-user.digit:8080/"
         egov-user-egov: "http://egov-user.digit:8080/"
         egov-location: "http://egov-location.digit:8080/"
-        egov-filestore: "http://egov-filestore.digit:8080/"
-        egov-localization: "http://egov-localization.digit:8080/"
-        egov-idgen: "http://egov-idgen.digit:8080/"
+        egov-filestore: "http://internal-gateway.digit:8080/"
+        egov-localization: "http://internal-gateway.digit:8080/"
+        egov-idgen: "http://internal-gateway.digit:8080/"
         egov-otp: "http://egov-otp.digit:8080/"
         egov-common-workflows: "http://egov-common-workflows.digit:8080/"
         egov-mdms-service: "http://egov-mdms-service.digit:8080/"
