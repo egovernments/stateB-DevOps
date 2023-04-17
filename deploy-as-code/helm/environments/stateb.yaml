@@ -344,7 +344,7 @@ egov-mdms-service:
       repo: "git@github.com:egovernments/MDMS-TenantB"
       branch: "master"
   mdms-folder: "MDMS-TenantB"
-  masters-config-url: "file:///work-dir/MDMS-TenantA/master-config.json"
+  masters-config-url: "file:///work-dir/MDMS-TenantB/master-config.json"
   java-args: -Dspring.profiles.active=monitoring
 
 egov-indexer:
