@@ -35,6 +35,7 @@ cluster-configs:
         egov-services-fqdn-name: "https://stateb.digit.org/"
         egov-state-level-tenant-id: "in.stateb"
         state-level-tenantid-length: "2"
+        state-level-tenant-id: "in.statea"
         is-environment-central-instance: "true"
         es-host: "elasticsearch-data-v1.stateb"
         es-indexer-host: "http://elasticsearch-data-v1.stateb:9200/"
