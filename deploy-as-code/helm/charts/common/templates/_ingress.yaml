@@ -5,7 +5,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ template "common.name" . }}
-  namespace: digit 
+  namespace: {{ .Values.global.ingress-namespace }}  
   annotations:
 {{- toYaml .Values.ingress.annotations | nindent 4 }}   
 {{- if .Values.ingress.waf.enabled }}      
@@ -29,7 +29,7 @@ spec:
       paths:
       - backend:
 {{- if .Values.ingress.zuul }}          
-          serviceName: zuul
+          serviceName: zuul-ifix
           servicePort: 8080
 {{ else }}
           serviceName: {{ .Values.ingress.serviceName | default (include "common.name" .) }}
