@@ -1,7 +1,7 @@
 global:
   domain: stateb.digit.org
   tracing-enabled: true
-  ingress-namespace: digit
+  ingressnamespace: digit
   namespace: stateb
   nodepool:
     nodeAffinity: false
