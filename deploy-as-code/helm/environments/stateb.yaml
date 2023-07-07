@@ -1004,11 +1004,11 @@ oauth2-proxy:
       upstreams = [ "file:///dev/null" ]
 
 ws-services:
-  is-external-workflow-enabled: "false"
+  is-external-workflow-enabled: "true"
   water-decryption-abac-enabled: "false"
 
 sw-services:
-  is-external-workflow-enabled: "false"
+  is-external-workflow-enabled: "true"
   sewerage-decryption-abac-enabled: "false"
 
 # eGov-eDCR DIGIT integration related config
