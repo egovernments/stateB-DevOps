@@ -89,6 +89,11 @@ env: |
     value: "egov.core.notification.sms"
   - name: SPRING_KAFKA_CONSUMER_GROUP_ID
     value: egov-firenoc-calculator
+  - name: IS_ENVIRONMENT_CENTRAL_INSTANCE
+    valueFrom:
+      configMapKeyRef:
+        name: egov-config
+        key: is-environment-central-instance
   - name: KAFKA_BOOTSTRAP_SERVER
     valueFrom:
       configMapKeyRef:
