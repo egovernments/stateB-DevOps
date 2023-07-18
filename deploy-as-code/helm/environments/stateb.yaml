@@ -152,7 +152,7 @@ cluster-configs:
         fsm: "http://fsm.digit:8080/"
         vehicle: "http://vehicle.digit:8080"
         vendor: "http://vendor.digit:8080"
-        stateb-egov-mdms-service: "http://internal-gateway.digit:8080/"
+        stateb-egov-mdms-service: "http://egov-mdms-service.stateb:8080/"
         stateb-egov-filestore: "http://egov-filestore.stateb:8080"
         egov-edcr: "http://egov-edcr.stateb:8080/"
         echallan-calculator: http://echallan-calculator.digit:8080/
