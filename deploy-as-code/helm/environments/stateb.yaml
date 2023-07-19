@@ -70,7 +70,7 @@ cluster-configs:
         internal-gateway: "http://internal-gateway.digit:8080/"
         billing-service: "http://billing-service.digit:8080/"
         collection-services: "http://collection-services.digit:8080/"
-        dashboard-analytics: http://dashboard-analytics.digit:8080/
+        dashboard-analytics: "http://internal-gateway.digit:8080/"
         dashboard-ingest: http://dashboard-ingest.digit:8080/
         egov-common-masters: "http://egov-common-masters.digit:8080/"
         egf-masters: "http://egf-masters.digit:8080/"
