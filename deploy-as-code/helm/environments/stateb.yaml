@@ -85,7 +85,7 @@ cluster-configs:
         egov-user-egov: "http://egov-user.digit:8080/"
         egov-location: "http://egov-location.digit:8080/"
         egov-filestore: "http://internal-gateway.digit:8080/"
-        egov-localization: "http://internal-gateway.digit:8080/"
+        egov-localization: "http://egov-localization.digit:8080/"
         egov-idgen: "http://internal-gateway.digit:8080/"
         egov-otp: "http://egov-otp.digit:8080/"
         egov-common-workflows: "http://egov-common-workflows.digit:8080/"
