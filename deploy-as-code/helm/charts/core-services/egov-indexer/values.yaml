@@ -40,7 +40,7 @@ env: |
     valueFrom:
       configMapKeyRef:
         name: egov-service-host
-        key: egov-indexer
+        key: egov-indexer      
   - name: EGOV_INFRA_INDEXER_HOST
     valueFrom:
       configMapKeyRef:
@@ -79,3 +79,13 @@ env: |
       configMapKeyRef:
         name: egov-service-host
         key: bpa-services 
+  - name: EGOV_MDMS_HOST
+    valueFrom:
+      configMapKeyRef:
+        name: egov-service-host
+        key: egov-mdms-service      
+  - name: EGOV_PT_HOST
+    valueFrom:
+      configMapKeyRef:
+        name: egov-service-host
+        key: property-services 
