@@ -8,6 +8,7 @@ ingress:
   enabled: true
   zuul: true
   context: "egov-indexer"
+  namespace: "digit"
 
 # Init Containers Configs
 initContainers:
