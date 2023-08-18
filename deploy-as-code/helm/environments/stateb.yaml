@@ -417,7 +417,7 @@ egov-data-uploader:
       branch: "central-instance"
 
 pdf-service:
-  replicas: 2
+  replicas: 1
   memory_limits: 1.5Gi
   initContainers:
     gitSync:
