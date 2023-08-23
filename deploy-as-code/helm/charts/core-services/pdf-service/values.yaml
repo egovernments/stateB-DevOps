@@ -111,7 +111,7 @@ env: |
     valueFrom:
       configMapKeyRef:
         name: egov-service-host
-        key: stateb-egov-filestore
+        key: egov-filestore
   - name: EGOV_HOST
     valueFrom:
       configMapKeyRef:
