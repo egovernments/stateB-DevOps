@@ -161,7 +161,7 @@ cluster-configs:
         turn-io-adapter: "http://turn-io-adapter.digit:8080/"
         pgr-services: "http://pgr-services.digit:8080/"
         birth-death-services: "http://birth-death-services.digit:8080/"
-        egov-pdf: "http://egov-pdf.stateb:8080/"
+        egov-pdf: "http://egov-pdf.digit:8080/"
 
 billing-service:
   memory_limits: 512Mi
